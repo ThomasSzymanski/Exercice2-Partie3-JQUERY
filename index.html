@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+
+ <form>
+    <input type="text" name="compteur" value="0" id="compteur"/>
+    <button type="button" name="button" id="addOne">+</button>
+    <button type="button" name="button" id="removeOne">-</button>
+  </form>
+  <script>
+    var clicks = $('#compteur').val();
+    $('#addOne').click(function(){
+      clicks ++;
+      $('#compteur').val(clicks);
+    });
+    $('#removeOne').click(function(){
+      clicks --;
+      $('#compteur').val(clicks);
+    });
+  </script>
+</body>
+</html>
